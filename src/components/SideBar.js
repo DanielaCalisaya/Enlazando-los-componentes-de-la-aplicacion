@@ -1,5 +1,6 @@
 import React from 'react';
 import image from '../assets/images/logo-DH.png';
+import {Link} from 'react-router-dom';
 
 function SideBar(){
     return(
@@ -32,24 +33,24 @@ function SideBar(){
 
                 {/*<!-- Nav Item - Pages -->*/}
                 <li className="nav-item">
-                    <a className="nav-link collapsed" href="/">
+                    <Link className="nav-link collapsed" to="/metricas">
                         <i className="fas fa-fw fa-folder"></i>
-                        <span>Pages</span>
-                    </a>
+                        <span>Métricas</span>
+                    </Link>
                 </li>
 
                 {/*<!-- Nav Item - Charts -->*/}
                 <li className="nav-item">
-                    <a className="nav-link" href="/">
+                    <Link className="nav-link" to="/pelicula">
                         <i className="fas fa-fw fa-chart-area"></i>
-                        <span>Charts</span></a>
+                        <span>Última pelicula</span></Link>
                 </li>
 
                 {/*<!-- Nav Item - Tables -->*/}
                 <li className="nav-item">
-                    <a className="nav-link" href="/">
+                    <Link className="nav-link" to="/generos">
                         <i className="fas fa-fw fa-table"></i>
-                        <span>Tables</span></a>
+                        <span>Generos</span></Link>
                 </li>
 
                 {/*<!-- Divider -->*/}
@@ -61,3 +62,6 @@ function SideBar(){
     )
 }
 export default SideBar;
+
+/* Linea 36, cambio la etiqueta a por el Link, dentro de la etiqueta 
+cambio el href por el to */

@@ -2,6 +2,7 @@ import React from 'react';
 import ContentRowCenter from './ContentRowCenter';
 import ContentRowMovies from './ContentRowMovies';
 import Chart from './Chart';
+import { Route, Routes } from 'react-router-dom';
 
 function ContentRowTop(){
     return(
@@ -13,7 +14,10 @@ function ContentRowTop(){
 					</div>
 				
 					{/*<!-- Content Row Movies-->*/}
-					<ContentRowMovies />
+					<Routes>
+						<Route path='/metricas' element={<ContentRowMovies/>}/>
+					</Routes>
+					
 					<ContentRowCenter />
 					<Chart />
 	
@@ -25,3 +29,4 @@ function ContentRowTop(){
 
 }
 export default ContentRowTop;
+{/*  */}

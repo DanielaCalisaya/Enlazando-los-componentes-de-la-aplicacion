@@ -12,6 +12,6 @@ componentes según las condiciones que nos requieran.
 
 ## M9 C46
 
-## Clase 108
+## Clase 109
 
 ## Ubicación -> Programación/TRABAJOS PRACTICOS/Enlazando los componentes de la aplicación-Dashboard-3
