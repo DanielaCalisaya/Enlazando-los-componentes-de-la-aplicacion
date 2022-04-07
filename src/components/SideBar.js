@@ -20,9 +20,9 @@ function SideBar(){
 
                 {/*<!-- Nav Item - Dashboard -->*/}
                 <li className="nav-item active">
-                    <a className="nav-link" href="/">
+                    <Link className="nav-link" to="/">
                         <i className="fas fa-fw fa-tachometer-alt"></i>
-                        <span>Dashboard - DH movies</span></a>
+                        <span>Dashboard - DH movies</span></Link>
                 </li>
 
                 {/*<!-- Divider -->*/}
@@ -31,7 +31,7 @@ function SideBar(){
                 {/*<!-- Heading -->*/}
                 <div className="sidebar-heading">Actions</div>
 
-                {/*<!-- Nav Item - Pages -->*/}
+                {/*<!-- Nav Item - Metrics -->*/}
                 <li className="nav-item">
                     <Link className="nav-link collapsed" to="/metricas">
                         <i className="fas fa-fw fa-folder"></i>
@@ -39,18 +39,25 @@ function SideBar(){
                     </Link>
                 </li>
 
-                {/*<!-- Nav Item - Charts -->*/}
+                {/*<!-- Nav Item - LastMovie -->*/}
                 <li className="nav-item">
                     <Link className="nav-link" to="/pelicula">
                         <i className="fas fa-fw fa-chart-area"></i>
                         <span>Última pelicula</span></Link>
                 </li>
 
-                {/*<!-- Nav Item - Tables -->*/}
+                {/*<!-- Nav Item - Genres -->*/}
                 <li className="nav-item">
                     <Link className="nav-link" to="/generos">
                         <i className="fas fa-fw fa-table"></i>
                         <span>Generos</span></Link>
+                </li>
+
+                {/*<!-- Nav Item - Tables -->*/}
+                <li className="nav-item">
+                    <Link className="nav-link" to="/peliculas">
+                        <i className="fas fa-fw fa-table"></i>
+                        <span>Películas</span></Link>
                 </li>
 
                 {/*<!-- Divider -->*/}
@@ -64,4 +71,4 @@ function SideBar(){
 export default SideBar;
 
 /* Linea 36, cambio la etiqueta a por el Link, dentro de la etiqueta 
-cambio el href por el to */
+cambio el href por el to, para poner el enlace hacia ese elemento que quiero ver, y arriba ya hará la importación */

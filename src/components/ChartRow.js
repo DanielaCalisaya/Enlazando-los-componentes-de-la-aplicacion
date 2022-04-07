@@ -18,7 +18,6 @@ function ChartRow(props){
                 </tr>
             )
     }
-    
         
 
 export default ChartRow;
