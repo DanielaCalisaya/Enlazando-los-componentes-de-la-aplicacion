@@ -3,6 +3,7 @@ import ContentRowCenter from './ContentRowCenter';
 import ContentRowMovies from './ContentRowMovies';
 import Chart from './Chart';
 import { Route, Routes } from 'react-router-dom';
+import Error404 from './Error404';
 
 function ContentRowTop(){
     return(
@@ -15,7 +16,7 @@ function ContentRowTop(){
 				
 					{/*<!-- Content Row Movies-->*/}
 					<Routes>
-						<Route path='/metricas' element={<ContentRowMovies/>}/>
+						<Route exact path='/metricas' element={<ContentRowMovies/>}/>			
 					</Routes>
 					{/* Si la ruta es /metricas el elemento que quiero renderizar es <ContentRowMovies/>
 					entonces si hago clic en métricas(del lado izquierdo), me renderiza la página incluyendo las 3 cajas que están debajo del título.
@@ -24,7 +25,8 @@ function ContentRowTop(){
 					<ContentRowCenter />
 
 					<Routes>
-						<Route path='/peliculas' element={<Chart />}/>
+						<Route exact path='/peliculas' element={<Chart />}/>		
+						<Route path='*' element={<Error404/>}/>	 	
 					</Routes>			
 	
 				</div>
@@ -40,3 +42,4 @@ export default ContentRowTop;
 /* Si traemos Routes, ya lo trae desde react-router-dom, en donde lo usemos, lo requerimos.
 Termina siendo una página más dinámica, al presionar alguno de los links del lado izquierdo, me renderiza solo la parte que quiero en la vista
 el footer no lo toca, arriba marcará la ruta, pero no se carga de cero la página */
+
