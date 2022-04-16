@@ -3,7 +3,6 @@ import ContentRowCenter from './ContentRowCenter';
 import ContentRowMovies from './ContentRowMovies';
 import Chart from './Chart';
 import { Route, Routes } from 'react-router-dom';
-import Error404 from './Error404';
 
 function ContentRowTop(){
     return(
@@ -26,7 +25,6 @@ function ContentRowTop(){
 
 					<Routes>
 						<Route exact path='/peliculas' element={<Chart />}/>		
-						<Route path='*' element={<Error404/>}/>	 	
 					</Routes>			
 	
 				</div>

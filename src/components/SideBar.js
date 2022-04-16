@@ -1,6 +1,6 @@
 import React from 'react';
 import image from '../assets/images/logo-DH.png';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom'; 
 
 function SideBar(){
     return(
@@ -70,5 +70,5 @@ function SideBar(){
 }
 export default SideBar;
 
-/* Linea 36, cambio la etiqueta a por el Link, dentro de la etiqueta 
+/* Linea 26, cambio la etiqueta a por el Link, dentro de la etiqueta 
 cambio el href por el to, para poner el enlace hacia ese elemento que quiero ver, y arriba ya hará la importación */
